@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Go back!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html { font: 1em/1.6 sans-serif; }
+      body { padding: 0 .75em; max-width: 30em; margin: 0 auto; }
+    </style>
+  </head>
+  <body>
+    <h1>前のページ確認してみて？</h1>
+    <script>
+      if (window.opener) {
+        opener.location = 'https://nttpc-josephting.bitbucket.io/rel-noopener/#hax-cross';
+      } else {
+        document.querySelector('h1').innerHTML = '前のページを弄ることができなかった。 <code>window.opener</code> が <code>null</code> だった。作戦失敗！';
+      }
+    </script>
+  </body>
+</html>
